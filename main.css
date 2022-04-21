@@ -1,5 +1,14 @@
+:root {
+  --green: #00ff00;
+  --white: #ffffff;
+  --black: #000000;
+}
+* {
+  color: var(--fontColor);
+  font-family: helvetica;
+}
 body {
-  font-family: fantasy;
+  background: var(--bg);
 }
 
 ul {
@@ -13,6 +22,11 @@ li {
   list-style: square;
 }
 
-#msg {
-  font-family: sans-serif;
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
 }
