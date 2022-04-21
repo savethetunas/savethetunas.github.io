@@ -35,6 +35,7 @@ li {
   --btnBg: var(--white);
   --btnFontColor: var(--black);
 }
+
 .btn {
   position: absolute;
   top: 20px;
@@ -46,6 +47,7 @@ li {
   color: var(--btnFontColor);
   background-color: var(--btnBg);
 }
+
 .btn:focus {
   outline-style: none;
 }
