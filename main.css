@@ -1,9 +1,9 @@
 body {
-  font-family: monospace;
+  font-family: fantasy;
 }
 
 ul {
-  font-family: helvetica;
+  font-family: cursive;
 }
 li {
   list-style: circle;
@@ -14,5 +14,5 @@ li {
 }
 
 #msg {
-  font-family: monospace;
+  font-family: sans-serif;
 }
