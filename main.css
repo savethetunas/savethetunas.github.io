@@ -5,21 +5,36 @@
 }
 * {
   color: var(--fontColor);
-  font-family: helvetica;
+  font-family: Helvetica;
 }
+
+h1 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-align: center;
+}
+
 body {
   background: var(--bg);
 }
 
 ul {
   font-family: cursive;
+  text-align: center;
 }
 li {
   list-style: circle;
+  text-decoration: line-through;
+}
+P {
+  text-align: center;
 }
 
-.list {
-  list-style: square;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 .light-theme {
@@ -34,19 +49,4 @@ li {
   --fontColor: var(--green);
   --btnBg: var(--white);
   --btnFontColor: var(--black);
-}
-
-.btn {
-  position: absolute;
-  top: 20px;
-  left: 250px;
-  height: 30px;
-  width: 75px;
-  border: none;
-  color: var(--btnFontColor);
-  background-color: var(--btnBg);
-}
-
-.btn:focus {
-  outline-style: none;
 }
