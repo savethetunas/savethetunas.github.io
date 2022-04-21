@@ -36,6 +36,11 @@ P {
   align-items: center;
   height: 100px;
 }
+.content {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
 
 .light-theme {
   --bg: var(--green);
