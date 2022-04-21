@@ -11,5 +11,4 @@ switcher.addEventListener("click", function () {
   } else {
     this.textContent = "Light";
   }
-  console.log("current class name: " + className);
 });
