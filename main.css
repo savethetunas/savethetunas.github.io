@@ -13,9 +13,6 @@ body {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
-  position: absolute;
-  top: 300px;
-  right: 25rem;
 }
 @-webkit-keyframes glow {
   from {
@@ -26,4 +23,7 @@ body {
     text-shadow: 0 0 20px #e1ff00, 0 0 30px #000000, 0 0 40px #06e6ff,
       0 0 50px #00b0fb, 0 0 60px #ff0280, 0 0 70px #3800e0, 0 0 80px #000000;
   }
+}
+h1 {
+  text-align: center;
 }
