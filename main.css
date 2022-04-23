@@ -26,4 +26,9 @@ body {
 }
 h1 {
   text-align: center;
+  width: 10rem;
+  margin: auto;
+  position: fixed;
+  left: 15rem;
+  top: 10rem;
 }
