@@ -1,0 +1,29 @@
+.glow {
+  font-size: 70px;
+  font-family: "Press Start 2P", cursive;
+  color: #7aee66c5;
+
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-align: center;
+  margin-top: 10rem;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #a407a98e, 0 0 20px #016fff6c, 0 0 30px #03d1ff,
+      0 0 40px #ff0000, 0 0 50px #0bf62e, 0 0 60px #fff702, 0 0 70px #9554b3;
+  }
+  to {
+    text-shadow: 0 0 20px #e1ff00, 0 0 30px #00000000, 0 0 65px #06e6ff,
+      0 0 65px #00b0fb, 0 0 26px #ff0280, 0 0 70px #3800e0, 0 0 80px #00eaff;
+  }
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 0.912) 0%,
+    rgb(26, 26, 26) 35%,
+    rgb(12, 11, 11) 100%
+  );
+}
