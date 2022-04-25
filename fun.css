@@ -3,9 +3,9 @@
   font-family: "Press Start 2P", cursive;
   color: #7aee66c5;
 
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 100s ease-in-out infinite alternate;
+  -moz-animation: glow 155s ease-in-out infinite alternate;
+  animation: glow 77s ease-in-out infinite alternate;
   text-align: center;
   margin-top: 5rem;
 }
