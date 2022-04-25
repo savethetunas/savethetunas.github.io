@@ -7,7 +7,7 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 @-webkit-keyframes glow {
   from {
