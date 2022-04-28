@@ -1,2 +1,3 @@
 # savethetunas.github.io
-looks like shit on mobile thoooo
+looks not good on mobile
+working on responisve stuff css query
