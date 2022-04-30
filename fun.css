@@ -5,7 +5,6 @@ body {
 }
 .kelp1 {
   font-size: clamp(1rem, 2vw + 1rem, 2.3rem);
-
   font-family: fantasy;
   color: green;
   list-style-type: none;
@@ -14,7 +13,6 @@ body {
   position: absolute;
   right: 35%;
   bottom: 25%;
-  font-size: ;
 }
 .stem1 {
   animation: wavey 2.2s linear 0s infinite alternate;
@@ -54,37 +52,31 @@ body {
   animation: wavey 2.2s linear 0s infinite alternate;
 }
 
-
-
 .fish1 {
   animation: fishy 45s ease-in-out 0s infinite alternate;
   font-family: fantasy;
-  font-size: clamp( .5em, 1vw + 1rem, 2rem) ;
+  font-size: clamp(0.5em, 1vw + 1rem, 2rem);
   max-width: fit-content;
   color: red;
   cursor: pointer;
- 
-
 }
-
 
 @keyframes fishy {
-0%{transform: translateX(50vw) translateY(50vh) scale(.9) rotate3d(0,1,0,90deg) ;
+  0% {
+    transform: translateX(50vw) translateY(50vh) scale(0.9)
+      rotate3d(0, 1, 0, 90deg);
+  }
+
+  50% {
+    transform: translateY(45vh) translateX(50vw) scale(1)
+      rotate3d(0, 1, 0, 45deg);
+  }
+
+  100% {
+    transform: translateX(50vw) translateY(65vh) rotate3d(0, 1, 0, 180deg)
+      scale(1.2);
+  }
 }
-
-50%{
-  transform: translateY(45vh) translateX(50vw)  scale(1) rotate3d(0,1,0, 45deg) ;
-}
-
-
-100%{
-  transform: translateX(50vw) translateY(65vh)  rotate3d(0,1,0, 180deg) scale(1.2) 
-}
-}
-
-
-
-
 
 /* only backround on hover seems to work when the fish is already animated.*/
 .fish1:hover {
@@ -107,24 +99,8 @@ body {
   40%, 60% {
     transform: translate3d(2px, 0, 0);
 }
-*/}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
+}
 
 .sand {
   margin: 0%;
@@ -142,4 +118,4 @@ body {
     url("data:image/svg+xml,%3Csvg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   filter: contrast(500%) brightness(600%) invert(45%);
   mix-blend-mode: screen;
-
+}
