@@ -1,25 +1,23 @@
 body {
   margin: 0;
+  padding: 0;
   background: rgb(0, 0, 0);
 }
-ul {
-  width: max-content;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 50%;
-  bottom: 25%;
-}
-li {
-  width: max-content;
-  max-width: 90%;
+.kelp1 {
+  font-size: clamp(1rem, 2vw + 1rem, 2.3rem);
+
+  font-family: fantasy;
+  color: green;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color: green;
-  font-family: fantasy;
-  font-size: clamp(1rem, 2vw + 0.5rem, 3.25rem);
-  animation: wavey 2s linear 0s infinite alternate;
+  position: absolute;
+  right: 35%;
+  bottom: 25%;
+  font-size: ;
+}
+.stem1 {
+  animation: wavey 2.2s linear 0s infinite alternate;
 }
 @keyframes wavey {
   from {
@@ -29,16 +27,104 @@ li {
     transform: rotate(10deg);
   }
 }
-/*apply differnt animation timing per li child of parent  ul(?)
-li:nth-child(1) {
+/*apply differnt animation timing per li child of parent  ul or whatever
+.stem1:nth-child(1) {
   animation-delay: 0s;
 }
-li:nth-child(2) {
-  animation-delay: 0.5s;
-}
-li:nth-child(3) {
+.stem1:nth-child(2) {
   animation-delay: 1s;
+}
+.stem1:nth-child(3) {
+  animation-delay: 2s;
 }*/
+
+.kelp2 {
+  font-size: clamp(1rem, 2vw + 1rem, 2.3rem);
+  font-family: fantasy;
+
+  color: green;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  right: 15%;
+  bottom: 25%;
+}
+.stem2 {
+  animation: wavey 2.2s linear 0s infinite alternate;
+}
+
+
+
+.fish1 {
+  animation: fishy 45s ease-in-out 0s infinite alternate;
+  font-family: fantasy;
+  font-size: clamp( .5em, 1vw + 1rem, 2rem) ;
+  max-width: fit-content;
+  color: red;
+  cursor: pointer;
+ 
+
+}
+
+
+@keyframes fishy {
+0%{transform: translateX(50vw) translateY(50vh) scale(.9) rotate3d(0,1,0,90deg) ;
+}
+
+50%{
+  transform: translateY(45vh) translateX(50vw)  scale(1) rotate3d(0,1,0, 45deg) ;
+}
+
+
+100%{
+  transform: translateX(50vw) translateY(65vh)  rotate3d(0,1,0, 180deg) scale(1.2) 
+}
+}
+
+
+
+
+
+/* only backround on hover seems to work when the fish is already animated.*/
+.fish1:hover {
+  background-color: rgba(0, 200, 255, 0.663);
+  /* animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}/*
+/*@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sand {
   margin: 0%;
@@ -56,4 +142,4 @@ li:nth-child(3) {
     url("data:image/svg+xml,%3Csvg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   filter: contrast(500%) brightness(600%) invert(45%);
   mix-blend-mode: screen;
-}
+
