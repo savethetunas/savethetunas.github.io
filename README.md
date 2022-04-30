@@ -10,5 +10,13 @@ Next I want to add fishies, bubbles, more kelp structers.
 Fishies need animation to swim across the screen.  
 Bubbler has to bring in air.  
 Three more kelp structures.  
+4/30  
+We got a fishy in the tank, repeat fishy is in the tank.
+Cant apply anything but backround color on hover if the element already has an animation.  
+To-DO  
+bubbles  
+kelp structure
+fishy pals  
+
 
 
