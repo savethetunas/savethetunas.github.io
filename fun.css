@@ -1,121 +1,336 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  background: rgb(0, 0, 0);
+  
 }
-.kelp1 {
-  font-size: clamp(1rem, 2vw + 1rem, 2.3rem);
-  font-family: fantasy;
-  color: green;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
   position: absolute;
-  right: 35%;
-  bottom: 25%;
+  overflow: hidden;
 }
-.stem1 {
-  animation: wavey 2.2s linear 0s infinite alternate;
+
+.wrapper div {
+  height: .75em;
+  width: .75em;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
 }
-@keyframes wavey {
+div .dot {
+  height: .7em;
+  width: .7em;
+  border-radius: 1.125em;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.wrapper div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+.wave-line[data-v-c0cb0066] {
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.wave-line .inner[data-v-c0cb0066] {
+  width: 600px;
+  height: 1200px;
+  transform: scaleY(2) rotate(60deg);
+}
+
+.wave-line .line[data-v-c0cb0066] {
+  opacity: 0.1;
+  position: absolute;
+  left: 300px;
+  top: -150px;
+  width: 1000px;
+  height: 1200px;
+  border: 5px double #15ff00;
+  border-radius: 24%;
+  transform-origin: 50% 49%;
+  -webkit-animation: wave-data-v-c0cb0066 48s linear infinite;
+  animation: wave-data-v-c0cb0066 48s linear infinite;
+}
+
+.wave-line .line[data-v-c0cb0066]:first-of-type,
+.wave-line .line[data-v-c0cb0066]:nth-of-type(4) {
+  opacity: 0.4;
+  border-width: 2px;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(2),
+.wave-line .line[data-v-c0cb0066]:nth-of-type(3) {
+  border-color: #fbff00;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(4),
+.wave-line .line[data-v-c0cb0066]:nth-of-type(5),
+.wave-line .line[data-v-c0cb0066]:nth-of-type(6) {
+  border-color: #2aa318;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(2) {
+  border-radius: 30%;
+  -webkit-animation-duration: 44.2s;
+  animation-duration: 44.2s;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(3) {
+  border-radius: 36%;
+  -webkit-animation-duration: 44.4s;
+  animation-duration: 44.4s;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(4) {
+  -webkit-animation-duration: 28s;
+  animation-duration: 28s;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(5) {
+  border-radius: 30%;
+  -webkit-animation-duration: 28.2s;
+  animation-duration: 28.2s;
+}
+
+.wave-line .line[data-v-c0cb0066]:nth-of-type(6) {
+  border-radius: 36%;
+  -webkit-animation-duration: 28.4s;
+  animation-duration: 28.4s;
+}
+
+@media (max-width: 767px) {
+  .wave-line .inner[data-v-c0cb0066] {
+    position: relative;
+    left: 400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wave-line[data-v-c0cb0066] {
+    right: calc((100vw - 1920px) / 2);
+  }
+}
+
+@-webkit-keyframes wave-data-v-c0cb0066 {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes wave-data-v-c0cb0066 {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+:root {
+  --dark: #002c9b93;
+  --light: #C8DFFF;
+}
+
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+
+}
+
+
+
+.wrapper3 {
+  animation: fish 1.5s ease infinite alternate;
+  transform: translate(-4px, -2px);
+}
+@keyframes fish {
   from {
-    transform: rotate(-10deg);
+    transform: translate(-4px, -2px);
   }
   to {
-    transform: rotate(10deg);
-  }
-}
-/*apply differnt animation timing per li child of parent  ul or whatever
-.stem1:nth-child(1) {
-  animation-delay: 0s;
-}
-.stem1:nth-child(2) {
-  animation-delay: 1s;
-}
-.stem1:nth-child(3) {
-  animation-delay: 2s;
-}*/
-
-.kelp2 {
-  font-size: clamp(1rem, 2vw + 1rem, 2.3rem);
-  font-family: fantasy;
-
-  color: green;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  position: absolute;
-  right: 15%;
-  bottom: 25%;
-}
-.stem2 {
-  animation: wavey 2.2s linear 0s infinite alternate;
-}
-
-.fish1 {
-  animation: fishy 45s ease-in-out 0s infinite alternate;
-  font-family: fantasy;
-  font-size: clamp(0.5em, 1vw + 1rem, 2rem);
-  max-width: fit-content;
-  color: red;
-  cursor: pointer;
-}
-
-@keyframes fishy {
-  0% {
-    transform: translateX(50vw) translateY(50vh) scale(0.9)
-      rotate3d(0, 1, 0, 90deg);
-  }
-
-  50% {
-    transform: translateY(45vh) translateX(50vw) scale(1)
-      rotate3d(0, 1, 0, 45deg);
-  }
-
-  100% {
-    transform: translateX(50vw) translateY(65vh) rotate3d(0, 1, 0, 180deg)
-      scale(1.2);
+    transform: translate(0px, 0px) rotate(1deg);
   }
 }
 
-/* only backround on hover seems to work when the fish is already animated.*/
-.fish1:hover {
-  background-color: rgba(0, 200, 255, 0.663);
-  /* animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px;
-}/*
-/*@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  
-  30%, 50%, 70% {
-    transform: translate3d(-2px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(2px, 0, 0);
+.bod {
+  color: var(--light);
+  transform-origin: 0 50%;
+  animation: bod 1.5s ease infinite alternate;
 }
-*/
+@keyframes bod {
+  from {
+    transform: translateX(0px) scalex(1);
+  }
+  to {
+    transform: translateX(0.25px) scalex(0.98);
+  }
 }
 
-.sand {
-  margin: 0%;
-  padding: 0%;
-  text-align: center;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  height: 25%;
-  background: radial-gradient(
-      ellipse at 50% 100%,
-      rgb(255, 255, 255),
-      rgba(255, 247, 0, 0)
-    ),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  filter: contrast(500%) brightness(600%) invert(45%);
-  mix-blend-mode: screen;
+.eye {
+  color: var(--dark);
+}
+
+.fin-tail {
+  color: var(--dark);
+  transform-origin: 200px;
+  animation: tail 1.5s 1.5s ease infinite alternate;
+}
+@keyframes tail {
+  from {
+    transform: scaleX(1) rotate(0deg);
+  }
+  to {
+    transform: scaleX(0.75) rotate(3deg);
+  }
+}
+
+.fin-back-bottom {
+  color: var(--dark);
+  transform-origin: 155px;
+  animation: fin-bottom 1.5s ease infinite alternate;
+}
+.fin-front-bottom {
+  color: var(--dark);
+  transform-origin: 76px;
+  animation: fin-bottom 1.5s ease infinite alternate;
+}
+@keyframes fin-bottom {
+  from {
+    transform: rotate(-4deg) scaleY(0.98);
+  }
+  to {
+    transform: rotate(0deg) scaleY(1);
+  }
+}
+
+.fin-front-top {
+  color: var(--dark);
+  transform-origin: 80px;
+  animation: fin-front 1.5s ease infinite alternate;
+}
+@keyframes fin-front {
+  from {
+    transform: rotate(0deg) scaleX(1);
+  }
+  to {
+    transform: rotate(-8deg) scaleX(0.55);
+  }
+}
+
+.fin-dorsel {
+  color: var(--dark);
+  transform-origin: 80px;
+  animation: fin-top 1.5s ease infinite alternate;
+  transform: rotate(2deg) translate(2px, 3px);
+}
+.fin-back-top {
+  color: var(--dark);
+  transform-origin: 145px;
+  animation: fin-top 1.5s ease infinite alternate;
+}
+@keyframes fin-top {
+  from {
+    transform: rotate(2deg) translate(2px, 3px);
+  }
+  to {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
 }
