@@ -112,17 +112,21 @@ div .dot {
   }
 }
 
-
-
-
+html, body {
+  overflow: hidden;
+  height: 100%;
+  background: linear-gradient(#00CCFF,#008AB8);
+  margin: 0;
+  padding: 0;
+}
 #container {
   position: relative;
   width: 500px;
   right: 0;
   left: 0;
   margin: auto;
-  -webkit-animation: fish1 25s linear infinite;
-  animation: container 25s linear infinite;
+  -webkit-animation: fish1 12s linear infinite;
+  animation: container 12s linear infinite;
 }
 .fish {
   position: absolute;
@@ -341,4 +345,3 @@ div .dot {
       top: 0px;
   }
 }
-
