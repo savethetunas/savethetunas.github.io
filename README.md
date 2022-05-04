@@ -19,7 +19,8 @@ kelp structure
 fishy pals  
 5/4  
 added and removed fishies and kelps and probably bubbles.  
-they look nice but are craptastic on less powerfull devices.
+they look nice but are craptastic on less powerfull devices.  
+added jelly fish
 
 
 
