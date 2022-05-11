@@ -20,7 +20,11 @@ fishy pals
 5/4  
 added and removed fishies and kelps and probably bubbles.  
 they look nice but are craptastic on less powerfull devices.  
-added jelly fish
-
+added jelly fish  
+5/10/22  
+changed everything. added many comments  
+particualry in the css and namely  
+regarding text and background img  
+responsivness.  
 
 
