@@ -26,5 +26,9 @@ changed everything. added many comments
 particualry in the css and namely  
 regarding text and background img  
 responsivness.  
+5/11  
+added bahtawns to my links  
+added a grid layout and its all looking responisve  
+used outdated icons but I THINK its ok.
 
 
