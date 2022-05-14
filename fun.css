@@ -42,18 +42,20 @@ iframe{
 
 
 }
+/*
 .content {
   grid-area: content;
   font-family: "Montserrat Medium";
   max-width: 40ch;
-  background-color: rgba(255, 255, 255, 0.575); /*used opaque backdrop for text on busy backround*/
+  background-color: rgba(255, 255, 255, 0.575); /*used opaque backdrop for text on busy backround
   color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 1.5rem; /*here is an example of using the font calculation from earlier*/
+  font-size: 1.5rem; /*here is an example of using the font calculation from earlier
   font-weight: 550;
   transform: scale(1.1);
   animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+
 
 /* .main-nav {
   grid-area: nav;
