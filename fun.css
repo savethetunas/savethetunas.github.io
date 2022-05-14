@@ -32,10 +32,14 @@ body {
   align-items: center;
 /*using this entire bit above allows the use of a responsive backround image with no repeat and centered*/
 }
-
+iframe{
+  transform: scale(.5);
+  position: relative;
+  bottom: 40%;
+}
 .main-head {
   grid-area: header;
- transform: scale(.5);
+
 
 }
 .content {
@@ -65,6 +69,8 @@ body {
 .main-footer {
   grid-area: footer;
   text-align: center;
+  transform: translateY(2rem);
+
 }
 
 .wrapper {
@@ -197,7 +203,7 @@ span:nth-child(19) {
 @keyframes fade-in {
   100% {
     opacity: 1;
-    filter: blur(0);
+    filter: blur(5px);
   }
 }
 
@@ -206,16 +212,17 @@ span:nth-child(19) {
 #twitter,
 #github,
 #facebook {
-
-font-size: 1.2em; /* font size here example of using the text size calculation*/
-background-color: #7dff035b;
+position: relative;
+transform: translateY(7rem);
+font-size: 1.2rem; /* font size here example of using the text size calculation*/
+background-color: #03eaffab;
 color: rgb(255, 255, 255);
 box-shadow: 2px 2px 2px #00000000, 10px 1px 12px #00000000,
   2px 2px 10px #00000000, 2px 2px 3px #00000000, inset 2px 2px 10px #00000000,
   inset 2px 2px 10px #00000000, inset 2px 2px 10px #00000080,
   inset 2px 2px 10px #00000000;
 border-radius: 29px;
-padding: 11px 19px;
+padding: 5px 19px;
 margin: 10px 40px;
 animation: animate 10s linear infinite;
 text-shadow: 0 0 50px #0073ffa8, 0 0 100px #0073ff, 0 0 150prgba(0, 115, 255, 0.506)ff,
