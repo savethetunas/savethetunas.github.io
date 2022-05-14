@@ -112,6 +112,7 @@ iframe{
      flex-direction: column;
    }*/
 }
+/*
 @keyframes scale {
   100% {
     transform: scale(1);
@@ -206,7 +207,7 @@ span:nth-child(19) {
     filter: blur(5px);
   }
 }
-
+*/
 
 #instagram,
 #twitter,
