@@ -1,22 +1,13 @@
 html{
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   font-size: calc(15px + 0.390625vw);  
-  /*Formula to calculate our font size 15px plus 0.00390625% of the screen width.
-  Use responsive font size rem units to specify any text that needs to be relative in size to your base font size. Like so,
-  h1 {
-      font-size: 1.8rem;
-  }
-  h2 {
-      font-size: 1.5rem;
-  }   
+  /*Formula to calculate font size 15px plus 0.00390625% of the screen width.
   */
 }
 
 *{
 padding: 0;
 margin: 0;
-/*setting this globally to zero takes away the little bit of v. scroll*/ 
-color: rgb(0, 0, 0);
 } 
 
 body {
