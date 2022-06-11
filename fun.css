@@ -24,7 +24,7 @@ body {
 /*using this entire bit above allows the use of a responsive backround image with no repeat and centered*/
 }
 iframe{
-  transform: scale(.8);
+  transform: scale(.7);
   position: relative;
   bottom: 40%;
 }
